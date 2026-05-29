@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if mso]>
+  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+  <![endif]-->
+  <title>{{TITLE}}</title>
+  <style>
+    /* ── Reset ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    body, html { margin: 0; padding: 0; width: 100%; }
+    body {
+      background-color: #F4F7FB;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: #005581;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    img { border: 0; display: block; max-width: 100%; height: auto; }
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    a { color: #1295D8; }
+
+    /* ── Outer wrapper ──────────────────────────────────── */
+    .wrapper {
+      background-color: #F4F7FB;
+      padding: 40px 16px;
+    }
+
+    /* ── Main card ──────────────────────────────────────── */
+    .card {
+      background: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* ── Header ─────────────────────────────────────────── */
+    .header {
+      background: #ffffff;
+      padding: 32px 48px 0;
+      text-align: center;
+    }
+    .header a {
+      display: inline-block;
+      line-height: 0;
+    }
+    .header-logo {
+      max-width: 210px;
+      width: 100%;
+    }
+    .header-rule {
+      height: 3px;
+      background-color: #FFB511;
+      margin: 24px 0 0;
+      font-size: 0;
+      line-height: 0;
+    }
+
+    /* ── Issue meta ─────────────────────────────────────── */
+    .issue-meta {
+      padding: 14px 48px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #718096;
+    }
+
+    /* ── Content area ───────────────────────────────────── */
+    .content {
+      padding: 32px 48px 48px;
+      color: #005581;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    /* ── Typography ─────────────────────────────────────── */
+    .content h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #003D5C;
+      line-height: 1.2;
+      margin: 0 0 20px;
+      padding: 0;
+    }
+    .content h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: #003D5C;
+      line-height: 1.25;
+      margin: 36px 0 12px;
+      padding: 0;
+    }
+    .content h3 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #005581;
+      line-height: 1.3;
+      margin: 28px 0 8px;
+      padding: 0;
+    }
+    .content p {
+      margin: 0 0 18px;
+      padding: 0;
+    }
+    .content a {
+      color: #1295D8;
+      text-decoration: underline;
+    }
+    .content a:hover {
+      color: #0A6DA8;
+    }
+    .content ul, .content ol {
+      margin: 0 0 18px;
+      padding: 0 0 0 24px;
+    }
+    .content li {
+      margin-bottom: 8px;
+      padding: 0;
+    }
+    .content strong {
+      color: #003D5C;
+      font-weight: bold;
+    }
+    .content em {
+      font-style: italic;
+      color: #4A5568;
+    }
+    .content blockquote {
+      border-left: 4px solid #FFB511;
+      margin: 28px 0;
+      padding: 14px 20px;
+      background: #FFF3D0;
+      color: #003D5C;
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+    .content blockquote p {
+      margin: 0;
+    }
+    .content hr {
+      border: none;
+      border-top: 1px solid #D0D9E4;
+      margin: 36px 0;
+      height: 0;
+    }
+    .content code {
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      background: #F4F7FB;
+      color: #003D5C;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    /* ── CTA / button ───────────────────────────────────── */
+    /* Usage: <p class="cta"><a href="..." class="btn">Label →</a></p> */
+    .cta {
+      text-align: center !important;
+      margin: 32px 0 !important;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #1295D8;
+      color: #ffffff !important;
+      text-decoration: none !important;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 14px 32px;
+      border-radius: 4px;
+      letter-spacing: 0.02em;
+      mso-padding-alt: 0;
+    }
+    /* Bulletproof Outlook button wrapper (use when authoring raw HTML) */
+    /*[if mso]>
+    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"
+      href="" style="height:48px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="#1295D8">
+      <w:anchorlock/>
+      <center style="color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;">Button Text</center>
+    </v:roundrect>
+    <![endif]*/
+
+    /* ── Footer ─────────────────────────────────────────── */
+    .footer {
+      background-color: #003D5C;
+      padding: 36px 48px;
+      text-align: center;
+    }
+    .footer-social {
+      margin: 0 0 22px;
+      font-size: 0;
+    }
+    .footer-social a {
+      display: inline-block;
+      color: #72CDF4 !important;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      margin: 0 12px;
+      letter-spacing: 0.04em;
+    }
+    .footer-social a:hover {
+      text-decoration: underline;
+    }
+    .footer-wordmark {
+      margin: 0 0 6px;
+    }
+    .footer-wordmark a {
+      color: #FFB511 !important;
+      text-decoration: none;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+    }
+    .footer-tagline {
+      color: #D6EEF9;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 0 0 18px;
+      padding: 0;
+    }
+    .footer-legal {
+      color: #9BAFC4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 1.6;
+      margin: 0 0 14px;
+      padding: 0;
+    }
+    .footer-unsub {
+      color: #718096;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+    .footer-unsub a {
+      color: #9BAFC4 !important;
+      text-decoration: underline;
+    }
+
+    /* ── Mobile ─────────────────────────────────────────── */
+    @media (max-width: 620px) {
+      .wrapper { padding: 0 !important; }
+      .header { padding: 24px 24px 0 !important; }
+      .issue-meta { padding: 12px 24px 0 !important; }
+      .content { padding: 24px 24px 36px !important; font-size: 15px !important; }
+      .footer { padding: 28px 24px !important; }
+      .content h1 { font-size: 26px !important; }
+      .content h2 { font-size: 20px !important; }
+      .content h3 { font-size: 17px !important; }
+      .footer-social a { margin: 0 8px !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preheader: hidden inbox preview text -->
+  <div style="display:none;max-height:0;overflow:hidden;font-size:1px;line-height:1px;color:#F4F7FB;mso-hide:all;">{{PREHEADER}} &#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;</div>
+
+  <!-- Outer table: sets background + centers card -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="wrapper">
+    <tr>
+      <td align="center" valign="top">
+
+        <!-- Card: 600px max-width container -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="card" width="600" style="max-width:600px;width:100%;">
+
+          <!-- ── HEADER ──────────────────────────────── -->
+          <tr>
+            <td class="header">
+              <a href="https://californiacompute.org" target="_blank" rel="noopener">
+                <img
+                  class="header-logo"
+                  src="https://californiacompute.org/uc_brand/images/uc-wordmark-blue-official.png"
+                  alt="CalCompute"
+                  width="210"
+                  height="auto"
+                >
+              </a>
+              <div class="header-rule"></div>
+            </td>
+          </tr>
+
+          <!-- ── ISSUE META ──────────────────────────── -->
+          <tr>
+            <td class="issue-meta">
+              Newsletter &middot; {{DATE}}
+            </td>
+          </tr>
+
+          <!-- ── CONTENT ────────────────────────────── -->
+          <tr>
+            <td class="content">
+              <!-- CONTENT -->
+            </td>
+          </tr>
+
+          <!-- ── FOOTER ─────────────────────────────── -->
+          <tr>
+            <td class="footer">
+
+              <!-- Social links -->
+              <div class="footer-social">
+                <a href="https://github.com/CalCompute" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/company/calcompute/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://x.com/CalCompute" target="_blank" rel="noopener">X&nbsp;/&nbsp;Twitter</a>
+              </div>
+
+              <!-- Wordmark -->
+              <p class="footer-wordmark">
+                <a href="https://californiacompute.org" target="_blank" rel="noopener">CalCompute.org</a>
+              </p>
+
+              <!-- Tagline + coalition line -->
+              <p class="footer-tagline">
+                California&rsquo;s Public AI Cloud.<br>
+                CaliforniaCompute.org is operated by the UC CalCompute Coalition,<br>an independent community coalition.
+              </p>
+
+              <!-- Legal -->
+              <p class="footer-legal">
+                &copy; UC CalCompute Coalition. CalCompute established by California Government Code &sect;&nbsp;11546.8 (SB-53, Chapter 138, 2025).
+              </p>
+
+              <!-- Unsubscribe -->
+              <p class="footer-unsub">
+                You received this because you signed up for CalCompute updates.<br>
+                <a href="{{UNSUBSCRIBE}}">Unsubscribe</a>
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+        <!-- /card -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /wrapper -->
+
+</body>
+</html>
